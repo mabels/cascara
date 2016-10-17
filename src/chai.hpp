@@ -51,6 +51,14 @@ namespace cascara {
       void equal(unsigned int t1, unsigned long t2, const char *msg = "") {
         this->equal<unsigned int>(t1, static_cast<unsigned int>(t2), msg);
       }
+
+      void equal(int t1, unsigned long t2, const char *msg = "") {
+        this->equal<unsigned long>(static_cast<unsigned long>(t1), t2, msg);
+      }
+      void equal(unsigned long t1, int t2, const char *msg = "") {
+        this->equal<unsigned long>(t1, static_cast<unsigned long>(t2), msg);
+      }
+
       void equal(unsigned int t1, unsigned int t2, const char *msg = "") {
         this->equal<unsigned int>(t1, t2, msg);
       }
