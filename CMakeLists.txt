@@ -58,3 +58,17 @@ include_directories(.)
 
 enable_testing()
 add_subdirectory(test)
+
+
+
+set(CASCARA_INCLUDE_INSTALL_DIR "${CMAKE_INSTALL_PREFIX}/include/cascara" 
+    CACHE PATH "The directory the headers are installed in")
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+install(FILES src/cascara.hpp src/chai.hpp src/mocha.hpp
+        DESTINATION "${CASCARA_INCLUDE_INSTALL_DIR}"
+        COMPONENT dev)
+
+export(PACKAGE ${PROJECT_NAME})
+
