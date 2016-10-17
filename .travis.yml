@@ -11,4 +11,4 @@ before_install:
 
 script:
     - cmake -DCMAKE_BUILD_TYPE=Release . && make
-    - test/Release/Darwin/test_cascara
+    - test/Release/*/test_cascara
