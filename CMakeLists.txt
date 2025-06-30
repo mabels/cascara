@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 2.8.4)
+cmake_minimum_required (VERSION 3.12.0)
 project (Cascara)
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${Cascara_SOURCE_DIR}/${CMAKE_BUILD_TYPE}/${CMAKE_SYSTEM_NAME})
 #SET(PROJECT_BINARY_DIR ${Tunator_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE})
